@@ -34,4 +34,7 @@ Route::view('/room','room');
 Route::view('/testing','testing');
 
 
-Route::view('/login','pages.pre_home');
+Route::view('/abcd','pages.pre_home');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
