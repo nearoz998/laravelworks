@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-    <div class='text-left'><a href='/'>Home</a></div>
+    <div class='pl-3'><a href='/'>Home</a></div>
     <div class='text-center'>
         <div class='container'>
             <h1>Room for Reading</h1>
