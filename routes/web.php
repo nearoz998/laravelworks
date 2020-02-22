@@ -23,9 +23,9 @@
 
 Route::view('/','welcome');
 
-Route::get('/{user}/{id}', function($u, $id){
-    return "user = $u, id = $id";
-});
+// Route::get('/{user}/{id}', function($u, $id){
+//     return "user = $u, id = $id";
+// });
 
 Route::get('user/{name?}', function ($name=null) {  
     return $name;  

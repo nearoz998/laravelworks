@@ -2,6 +2,7 @@
 
 @section('content')
     <div class='text-left'><div class='pl-3'><a href='/'>Home</a></div></div>
+    <div class='text-right'><div class='pr-3'><a href='/posts/create'>Create Post</a></div></div>
     <h1>Posts</h1>
     @if (count($posts) >= 1)
         @foreach($posts as $post)
