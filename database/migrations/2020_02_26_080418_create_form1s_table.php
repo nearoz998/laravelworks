@@ -20,7 +20,7 @@ class CreateForm1sTable extends Migration
             $table->string('college');
             $table->string('faculty');
             $table->biginteger('crn');
-            $table->mediumText('descrption');
+            $table->mediumText('description');
             $table->timestamps();
         });
     }

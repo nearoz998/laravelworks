@@ -1,4 +1,4 @@
-@extends('layouts.app');
+@extends('layouts.app')
 
 @section('content')
 <a href='/' class='btn btn-primary'>Go back</a>

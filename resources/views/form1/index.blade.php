@@ -15,7 +15,6 @@
             <p>No registrations!!!</p>
             <p><a href = '/'>Back to home</a></p>
         </div>
-        {{-- paginate in Postscontroller --}}
-        {{$$number_registered->links()}}
+        {{-- {{$$number_registered->links()}} --}}
     @endif
 @endsection

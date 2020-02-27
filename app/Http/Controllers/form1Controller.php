@@ -58,7 +58,7 @@ class form1Controller extends Controller
             $form->description = $request->input('description');
             
             $form->save();
-            return Registered;
+            return redirect('/form1');
     }
 
     /**
