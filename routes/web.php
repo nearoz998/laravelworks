@@ -42,3 +42,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/posts', 'PostsController');
 
 Route::view('pawan', 'dhakalpawan');
+
+Route::resource('/form1', 'form1Controller');

@@ -4,11 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Post;
+use App\form1;
 
-use DB;
-
-class PostsController extends Controller
+class form1Controller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,11 +16,8 @@ class PostsController extends Controller
     public function index()
     {
         //
-        // $posts = Post::all();
-        // $posts = Post::orderBy('title', 'asc')->get();
-        // $post = DB::select('SELECT * FROM posts');
-        $posts = Post::orderBy('title', 'asc')->paginate(10);
-        return view('posts.index')->with('posts', $posts);
+        $number_registered = form1::all();
+        return view('form1.index')->with('number_registered', $number_registered);
     }
 
     /**
@@ -33,7 +28,7 @@ class PostsController extends Controller
     public function create()
     {
         //
-        return view('posts.create');
+        return view('form1.create');
     }
 
     /**
@@ -44,15 +39,26 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
+        //
         $this->validate($request, [
-            'title' => 'required',
-            'body' => 'required',
+            'name'=>'required',
+            'university'=>'required',
+            'college'=>'required',
+            'crn'=>'required',
+            'faculty'=>'required',
+            'description'=>'required',
+            
         ]);
-        $post = new Post;
-        $post->title = $request->input('title');
-        $post->body = $request->input('body');
-        $post->save();
-        return redirect('/posts')->with('success', 'Post Created');
+            $form = new form1;
+            $form->name = $request->input('name');
+            $form->university = $request->input('university');
+            $form->college = $request->input('college');
+            $form->faculty = $request->input('faculty');
+            $form->crn = $request->input('crn');
+            $form->description = $request->input('description');
+            
+            $form->save();
+            return Registered;
     }
 
     /**
@@ -64,9 +70,8 @@ class PostsController extends Controller
     public function show($id)
     {
         //
-        // return Post::find($id);
-        $post = Post::find($id);
-        return view('posts.show')->with('post', $post);
+        $form = form1::find($id);
+        return view('form1.show')->with('form', $form);
     }
 
     /**

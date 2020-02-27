@@ -86,6 +86,7 @@
 
                 <div class="links">
                     <a href="posts">Posts</a>
+                    <a href="form1">Form1</a>
                     <a href="testing">Testing</a>
                     <a href="room">RFR</a>
                     <a href="pawan">Pawan</a>
