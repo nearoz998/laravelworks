@@ -1,4 +1,4 @@
-@extends ('layouts.app');
+@extends ('layouts.app')
 
 @section('content')
     <div class='text-left'><a href='/'>Home</a></div>
