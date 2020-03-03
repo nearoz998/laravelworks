@@ -1,4 +1,5 @@
 @extends('layouts.app')
+{{-- @extends('adminlte::register') --}}
 
 @section('content')
 <div class='pl-3'><a href='/'>Home</a></div>

@@ -1,5 +1,5 @@
-@extends('layouts.app')
-
+{{-- @extends('layouts.app') --}}
+@extends('adminlte::login')
 @section('content')
 <a href='/' class='btn btn-success'>Home</a>
 <div class="container">

@@ -1,4 +1,5 @@
-@extends('layout.app')
+{{-- @extends('layout.app') --}}
+@extends('adminlte::page')
 
 @section('content')
     <div class='pl-3'>

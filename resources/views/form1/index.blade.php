@@ -1,5 +1,5 @@
-@extends ('layouts.app')
-
+{{-- @extends ('layouts.app') --}}
+@extends('adminlte::page')
 @section('content')
     <div class='text-left'><div class='pl-3'><a href='/'>Home</a></div></div>
     <div class='text-right'><div class='pr-3'><a href='/form1/create'>Register Form</a></div></div>
