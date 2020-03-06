@@ -62,6 +62,48 @@
                     @endif
                 </div>
                 <div class="input-group mb-3">
+                    <input type="date" name="date_of_birth" class="form-control {{ $errors->has('date_of_birth') ? 'is-invalid' : '' }}" value="{{ old('date_of_birth') }}"
+                           placeholder="{{ __('Date of birth') }}">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-calendar"></span>
+                        </div>
+                    </div>
+                    @if ($errors->has('date_of_birth'))
+                        <div class="invalid-feedback">
+                            <strong>{{ $errors->first('date_of_birth') }}</strong>
+                        </div>
+                    @endif
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" name="address" class="form-control {{ $errors->has('address') ? 'is-invalid' : '' }}" value="{{ old('address') }}"
+                           placeholder="{{ __('Address') }}">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-address-book"></span>
+                        </div>
+                    </div>
+                    @if ($errors->has('address'))
+                        <div class="invalid-feedback">
+                            <strong>{{ $errors->first('address') }}</strong>
+                        </div>
+                    @endif
+                </div>
+                <div class="input-group mb-3">
+                    <input type="integer" name="mobile" class="form-control {{ $errors->has('mobile') ? 'is-invalid' : '' }}" value="{{ old('mobile') }}"
+                           placeholder="{{ __('Mobile') }}">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-mobile"></span>
+                        </div>
+                    </div>
+                    @if ($errors->has('mobile'))
+                        <div class="invalid-feedback">
+                            <strong>{{ $errors->first('mobile') }}</strong>
+                        </div>
+                    @endif
+                </div>
+                <div class="input-group mb-3">
                     <input type="password" name="password" class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
                            placeholder="{{ __('adminlte::adminlte.password') }}">
                     <div class="input-group-append">

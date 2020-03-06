@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('adminlte::page')
 
 @section('content')
     <div class='pl-3'><a href='/'>Home</a></div>

@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => 'nec, ELX-016',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -30,7 +30,7 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>ELX-</b>016',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image-xl',
     'logo_img_xl' => null,
@@ -74,7 +74,7 @@ return [
     'classes_content' => 'container-fluid',
     'classes_sidebar' => 'sidebar-dark-primary elevation-4',
     'classes_sidebar_nav' => '',
-    'classes_topnav' => 'navbar-white navbar-light',
+    'classes_topnav' => 'navbar-white navbar-blue',
     'classes_topnav_nav' => 'navbar-expand-md',
     'classes_topnav_container' => 'container',
 
@@ -179,6 +179,36 @@ return [
             'topnav' => true,
         ],
         [
+            'text' => 'posts',
+            'topnav' => true,
+            'url' => 'posts'
+        ],
+        [
+            'text' => 'form1',
+            'topnav' => true,
+            'url' => 'form1'
+        ],
+        [
+            'text' => 'testing',
+            'topnav' => true,
+            'url' => 'testing'
+        ],
+        [
+            'text' => 'RFR',
+            'topnav' => true,
+            'url' => 'room'
+        ],
+        [
+            'text' => 'pawan',
+            'topnav' => true,
+            'url' => 'dhakalpawan'
+        ],
+        [
+            'text' => 'my GitHub',
+            'topnav' => true,
+            'url' => 'https://github.com/nearoz998/laravelworks'
+        ],
+        [
             'text' => 'blog',
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
@@ -187,7 +217,7 @@ return [
             'text'        => 'pages',
             'url'         => 'admin/pages',
             'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
+            'label'       => 6,
             'label_color' => 'success',
         ],
         ['header' => 'account_settings'],
@@ -202,40 +232,115 @@ return [
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
+            'text'    => 'Classroom',
+            'icon'    => 'fas fa-book',
+            'icon_color' => 'blue',
             'submenu' => [
                 [
-                    'text' => 'level_one',
-                    'url'  => '#',
+                    'text' => 'Semester 1',
+                    'url'  => 'https://drive.google.com/drive/folders/1-W9EiQCS80Qez08V7oMmhFCNluMZk81Z',
+                    'icon_color' => 'green',
                 ],
                 [
-                    'text'    => 'level_one',
-                    'url'     => '#',
+                    'text' => 'Semester 2',
+                    'url'  => 'https://drive.google.com/drive/folders/1-_0suPQ9cOUEYV3HkkTiiH3pnPRh0wFV',
+                    'icon_color' => 'green',
+                ],
+                [
+                    'text' => 'Semester 3',
+                    'url'  => 'https://drive.google.com/drive/folders/1-9bwOx5Ik1jaOMm5hUVn3pabOJJwDGcV',
+                    'icon_color' => 'green',
+                ],
+                [
+                    'text' => 'Semester 4',
+                    'url'  => '#',
+                    'icon_color' => 'green',
                     'submenu' => [
                         [
-                            'text' => 'level_two',
-                            'url'  => '#',
+                            'text' => 'Electronic Circuits',
+                            'url'  => 'https://drive.google.com/drive/folders/10Gc0lPdGgiUX_5qQcLOlqqi07cOvgfUR',
+                            'icon_color' => 'red',
                         ],
                         [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
+                            'text' => 'Instrumentation',
+                            'url'  => 'https://drive.google.com/drive/folders/1-M02pUBHdlYxO7SfoUgofUgLtvQz5QMe',
+                            'icon_color' => 'red',
                         ],
-                    ],
+                        [
+                            'text' => 'Microprocessors',
+                            'url'  => 'https://drive.google.com/drive/folders/10KtXT3MRO5T9TDxG_loTFzuShCdoi_P_',  
+                            'icon_color' => 'red', 
+                        ],
+                   ],
                 ],
                 [
-                    'text' => 'level_one',
+                    'text' => 'Semester 5',
+                    'url'  => 'https://drive.google.com/drive/folders/1cbNAN7i2cJEXCKVTX4nVkc3FwNCC_OvK',
+                    'icon_color' => 'green',
+                ],
+                [
+                    'text' => 'Semester 6',
+                    'url'  => 'https://drive.google.com/drive/folders/1A8S5fkBA4aJSbakG-Sqa_B9frNqY8lOr',
+                    'icon_color' => 'green',
+                ],
+                [
+                    'text' => 'Semester 7',
                     'url'  => '#',
+                    'icon_color' => 'green',
+                    'submenu' => [
+                        [
+                            'text' => 'Aeronautical Communication',
+                            'url'  => 'https://drive.google.com/drive/folders/1PV5QqAi99xwaQVfCYKENq8MVntLpNomA',
+                            'icon_color' => 'red',
+                        ],
+                        [
+                            'text' => 'Computer Network',
+                            'url'  => 'https://drive.google.com/drive/folders/1606uvr7n0VOTah02U12Yte3YAKcnojzY',
+                            'icon_color' => 'red',
+                        ],
+                        [
+                            'text' => 'Digital Communication',
+                            'url'  => 'https://drive.google.com/drive/folders/13Tmgnu0NomV1yQHOB5kA4TkGppOmFc97',
+                            'icon_color' => 'red',
+                        ],
+                        [
+                            'text' => 'Digital Signal Processing',
+                            'url'  => '#',
+                            'icon_color' => 'red',
+                            'submenu' => [
+                                [
+                                    'text' => 'Lab Works',
+                                    'url'  => 'https://drive.google.com/drive/folders/125Ox9LAfVHh7XgCg7HYSb7OqQ8IzzkAC',
+                                    'icon_color' => 'orange',
+                                ],
+                                [
+                                    'text' => 'Notes',
+                                    'url'  => 'https://drive.google.com/drive/folders/11-9EM5N7VZhioH9Alo1qXTj1JXKXsLsb',
+                                    'icon_color' => 'orange',
+                                ],
+                                [
+                                    'text' => 'Tutorials',
+                                    'url'  => 'https://drive.google.com/drive/folders/1-c3J7pDHtef3JPiZ0E3mb-_yz8f24wRy',
+                                    'icon_color' => 'orange',   
+                                ],
+                           ],
+                        ],
+                        [
+                            'text' => 'Electromagnetic Propagation and Antenna',
+                            'url'  => 'https://drive.google.com/drive/folders/12UzPFD8usEN8NOeFnbSPSw6MuxvHlJw4',  
+                            'icon_color' => 'black', 
+                        ],
+                        [
+                            'text' => 'Research Methodology',
+                            'url'  => 'https://drive.google.com/drive/folders/1BwaXEM9B6X4v45GVOdqJiARnEBFKxNam',
+                            'icon_color' => 'black',
+                        ],
+                   ],
+                ],
+                [
+                    'text' => 'Semester 8',
+                    'url'  => '#',
+                    'icon_color' => 'green',
                 ],
             ],
         ],

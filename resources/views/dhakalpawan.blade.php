@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('adminlte::page')
 
 @section('content')
 <a href='/' class='btn btn-success'>Go back</a>

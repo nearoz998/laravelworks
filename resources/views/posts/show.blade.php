@@ -1,4 +1,4 @@
-@extends ('layouts.app')
+@extends('adminlte::page')
 
 @section('content')
     <a href='/posts' class='btn btn-default'>Go back</a>

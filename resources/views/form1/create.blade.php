@@ -3,7 +3,7 @@
 
 @section('content')
 <a href='/posts' class='btn btn-primary'>Go back</a>
-<h2>Register your abcd</h2>
+<h2>Register your identity</h2>
 {!! Form::open(['action' => 'form1Controller@store']) !!}
     @csrf
     <div class='card col-md-5'>

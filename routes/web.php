@@ -27,20 +27,20 @@ Route::view('/','welcome');
 //     return "user = $u, id = $id";
 // });
 
-Route::get('user/{name?}', function ($name=null) {  
-    return $name;  
-});
+// Route::get('user/{name?}', function ($name=null) {  
+//     return $name;  
+// });
 Route::view('/room','room');
 Route::view('/testing','testing');
 
-
-Route::view('/abcd','pages.pre_home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/posts', 'PostsController');
 
-Route::view('pawan', 'dhakalpawan');
+Route::view('dhakalpawan', 'dhakalpawan');
 
 Route::resource('/form1', 'form1Controller');
+
+Route::view('/dashboard', 'admin.dashboard');

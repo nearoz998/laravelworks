@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+@extends('admin.dashboard')
+
+
+
+
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -89,14 +94,10 @@
                     <a href="form1">Form1</a>
                     <a href="testing">Testing</a>
                     <a href="room">RFR</a>
-                    <a href="pawan">Pawan</a>
+                    <a href="dhakalpawan">Pawan</a>
                     <a href="https://github.com/nearoz998/laravelworks">My GitHub</a>
-                    {{-- <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a> --}}
                 </div>
             </div>
         </div>
     </body>
-</html>
+</html> --}}
