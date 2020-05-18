@@ -48,13 +48,6 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        Validator::extend('min_length', function($attribute, $value, $parameters){
-            return strlen($value) >= $parameters[0];
-        });
-        
-        Validator::extend('max_length', function($attribute, $value, $parameters){
-            return strlen($value) <= $parameters[0];
-        });
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'date_of_birth' => ['required', 'date'],

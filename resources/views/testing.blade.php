@@ -1,5 +1,5 @@
 {{-- @extends('layouts.app') --}}
-@extends('adminlte::page')
+{{-- @extends('adminlte::page')
 
 @section('content')
     <div class='pl-3'>
@@ -9,4 +9,21 @@
     </div>
     <p class='text-end'><div class='text-center'><a href='/'>Back to home</div></p>
     
-@endsection
+@endsection --}}
+
+@if (Route::has('login'))
+    @auth
+        @extends('adminlte::page')
+        @section('content')
+            {{'asd'}}
+        @endsection
+    @else
+    @section('content')
+        <a href="{{ route('login') }}"class='btn btn-primary'>Login</a>
+        @if (Route::has('register'))
+            <a href="{{ route('register') }}"class='btn btn-success'>Register</a>
+        @endif
+        {{'Hello'}}
+        @endsection
+    @endauth
+@endif

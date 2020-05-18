@@ -21,8 +21,6 @@
 
 //Route::redirect('hello','/');
 
-Route::view('/','welcome');
-
 // Route::get('/{user}/{id}', function($u, $id){
 //     return "user = $u, id = $id";
 // });
@@ -30,17 +28,20 @@ Route::view('/','welcome');
 // Route::get('user/{name?}', function ($name=null) {  
 //     return $name;  
 // });
-Route::view('/room','room');
+Route::view('/room','room')->middleware('auth');
 Route::view('/testing','testing');
 
 Auth::routes();
+Auth::routes(['register' => true]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->middleware('auth');
 
-Route::resource('/posts', 'PostsController');
+Route::resource('/posts', 'PostsController')->middleware('auth');
 
-Route::view('dhakalpawan', 'dhakalpawan');
+Route::view('dhakalpawan', 'dhakalpawan')->middleware('auth');
 
-Route::resource('/form1', 'form1Controller');
+Route::resource('/form1', 'form1Controller')->middleware('auth');
 
-Route::view('/dashboard', 'admin.dashboard');
+Route::view('/dashboard', 'admin.dashboard')->middleware('auth');
+
+Route::view('/', 'welcome');

@@ -1,8 +1,19 @@
-
 @extends('adminlte::page')
 @section('content')
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+<div class='text-right'>
+    @if (Route::has('login'))
+        @auth
+            {{-- <a href="{{ url('/home') }}"class='btn btn-primary'>Goto Homepage</a> --}}
+        @else
+            <a href="{{ route('login') }}"class='btn btn-primary'>Login</a>
+
+            @if (Route::has('register'))
+                <a href="{{ route('register') }}"class='btn btn-success'>Register</a>
+            @endif
+        @endauth
+    @endif
+</div>
+
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
@@ -107,7 +118,6 @@
     <!-- Default to the left -->
     <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
   </footer>
-</div>
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->

@@ -53,7 +53,7 @@ return [
     'layout_boxed' => null,
     'layout_fixed_sidebar' => null,
     'layout_fixed_navbar' => null,
-    'layout_fixed_footer' => null,
+    'layout_fixed_footer' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -74,8 +74,8 @@ return [
     'classes_content' => 'container-fluid',
     'classes_sidebar' => 'sidebar-dark-primary elevation-4',
     'classes_sidebar_nav' => '',
-    'classes_topnav' => 'navbar-white navbar-blue',
-    'classes_topnav_nav' => 'navbar-expand-md',
+    'classes_topnav' => 'navbar-white text-sm',
+    'classes_topnav_nav' => 'navbar-expand-lg',
     'classes_topnav_container' => 'container',
 
     /*
@@ -93,12 +93,12 @@ return [
     'sidebar_mini' => false,
     'sidebar_collapse' => false,
     'sidebar_collapse_auto_size' => false,
-    'sidebar_collapse_remember' => false,
+    'sidebar_collapse_remember' => true,
     'sidebar_collapse_remember_no_transition' => true,
     'sidebar_scrollbar_theme' => 'os-theme-light',
     'sidebar_scrollbar_auto_hide' => 'l',
     'sidebar_nav_accordion' => true,
-    'sidebar_nav_animation_speed' => 300,
+    'sidebar_nav_animation_speed' => 350,
 
     /*
     |--------------------------------------------------------------------------
@@ -114,7 +114,7 @@ return [
 
     'right_sidebar' => false,
     'right_sidebar_icon' => 'fas fa-cogs',
-    'right_sidebar_theme' => 'dark',
+    'right_sidebar_theme' => 'blue',
     'right_sidebar_slide' => true,
     'right_sidebar_push' => true,
     'right_sidebar_scrollbar_theme' => 'os-theme-light',
@@ -179,34 +179,43 @@ return [
             'topnav' => true,
         ],
         [
-            'text' => 'posts',
-            'topnav' => true,
-            'url' => 'posts'
-        ],
-        [
-            'text' => 'form1',
-            'topnav' => true,
-            'url' => 'form1'
-        ],
-        [
             'text' => 'testing',
             'topnav' => true,
-            'url' => 'testing'
+            'url' => 'testing',
+            'icon' => '',
         ],
         [
-            'text' => 'RFR',
+            'text' => 'Study',
+            'icon' => '',
+            'auto_view' => true,
             'topnav' => true,
-            'url' => 'room'
+            'preexpand' => true,
+            'class' => 'text-right',
+            'url' => '#',
+            'submenu' => [
+                    [
+                        'text' => 'posts',
+                        'url' => 'posts',
+                    ],
+                    [
+                        'text' => 'form1',
+                        'url' => 'form1',
+                    ],
+                    [
+                        'text' => 'RFR',
+                        'url' => 'room',
+                    ],
+                    [
+                        'text' => 'pawan',
+                        'url' => 'dhakalpawan',
+                    ],
+                ],
         ],
         [
-            'text' => 'pawan',
+            'text' => 'myGitHub',
             'topnav' => true,
-            'url' => 'dhakalpawan'
-        ],
-        [
-            'text' => 'my GitHub',
-            'topnav' => true,
-            'url' => 'https://github.com/nearoz998/laravelworks'
+            'url' => 'https://github.com/nearoz998/laravelworks',
+            'icon' => 'fab fa-github',
         ],
         [
             'text' => 'blog',
@@ -231,10 +240,12 @@ return [
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-lock',
         ],
+        ['header' => 'ELX-016'],
         [
             'text'    => 'Classroom',
             'icon'    => 'fas fa-book',
-            'icon_color' => 'blue',
+            'topnav'  => true,
+            // 'icon_color' => 'blue',
             'submenu' => [
                 [
                     'text' => 'Semester 1',
@@ -328,12 +339,12 @@ return [
                         [
                             'text' => 'Electromagnetic Propagation and Antenna',
                             'url'  => 'https://drive.google.com/drive/folders/12UzPFD8usEN8NOeFnbSPSw6MuxvHlJw4',  
-                            'icon_color' => 'black', 
+                            'icon_color' => 'red', 
                         ],
                         [
                             'text' => 'Research Methodology',
                             'url'  => 'https://drive.google.com/drive/folders/1BwaXEM9B6X4v45GVOdqJiARnEBFKxNam',
-                            'icon_color' => 'black',
+                            'icon_color' => 'red',
                         ],
                    ],
                 ],
